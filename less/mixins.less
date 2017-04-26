@@ -1,0 +1,19 @@
+
+.clearfix() {
+	&::after {
+	content: "";
+	display: table;
+	clear: both;
+	}
+}
+
+.container() {
+	width: 280px;
+	padding: 0 20px;
+	margin: 0 auto;
+	@media @tablet-width {
+		width: 700px;
+	}
+	@media @desktop-width {
+		width: 940px;	}
+}
